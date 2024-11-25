@@ -6,7 +6,7 @@ All credits: https://github.com/Nilhcem/FakeSMTP
 
 ## How to start
 
-- requires java 8
-- ./mvnw clean install
-- change properly <code>docker-compose.yml</code> depending on your needs
+- Requires docker and docker compose ((Docker version 27.3.1, build ce12230))
+- Change properly <code>docker-compose.yml</code> depending on your needs
 - <code>docker compose build && docker compose up -d</code>
+- docker compose will expose smtp on port 2525
