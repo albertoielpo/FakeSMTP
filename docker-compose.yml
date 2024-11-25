@@ -1,0 +1,12 @@
+networks:
+  example-net:
+    driver: "bridge"
+
+services:
+  fake-smtp:
+    build: .
+    container_name: fake-smtp
+    ports:
+      - "2525:25"
+    networks:
+      - example-net

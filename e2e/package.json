@@ -1,0 +1,15 @@
+{
+    "name": "e2e",
+    "version": "1.0.0",
+    "main": "mail-test.js",
+    "dependencies": {
+        "nodemailer": "^6.9.16"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "node mail-test.js"
+    },
+    "author": "Alberto Ielpo",
+    "license": "MIT",
+    "description": "Test e2e"
+}
