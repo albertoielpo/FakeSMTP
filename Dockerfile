@@ -3,7 +3,7 @@ FROM openjdk:8-jdk-alpine
 # Build from source
 RUN apk add git
 # Clone from stable tag
-RUN git clone -b v1.0.0 https://github.com/albertoielpo/FakeSMTP.git
+RUN git clone -b v2.1.0 https://github.com/albertoielpo/FakeSMTP.git
 WORKDIR /FakeSMTP
 # Locally tests works, we need to checks why here it's not working. For now leave skipTests true
 RUN ./mvnw clean install -DskipTests=true
