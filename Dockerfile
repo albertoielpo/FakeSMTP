@@ -5,9 +5,9 @@ RUN apk add git
 # Clone from stable tag
 RUN git clone -b v1.0.0 https://github.com/albertoielpo/FakeSMTP.git
 WORKDIR /FakeSMTP
-# Locally tests works, needs to checks why here it's not working. For now leave skipTests true
+# Locally tests works, we need to checks why here it's not working. For now leave skipTests true
 RUN ./mvnw clean install -DskipTests=true
-RUN cp target/fakeSMTP-2.1-SNAPSHOT.jar ../fakeSMTP.jar
+RUN cp target/fakeSMTP-2.1.0.jar ../fakeSMTP.jar
 WORKDIR /
 # output will contains all mails
 RUN mkdir -p /output
