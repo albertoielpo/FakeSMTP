@@ -1,5 +1,5 @@
-# Starting from jdk 8 alpine
-FROM openjdk:8-jdk-alpine
+# Starting from jdk 11
+FROM eclipse-temurin:11-jdk-alpine
 # Build from source
 RUN apk add git
 # Clone from stable tag
